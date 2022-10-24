@@ -1,14 +1,19 @@
+import { Header } from '@/components/Header';
+import { Hero } from '@/components/Hero';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className='bg-charcoal text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
       <Head>
         <title>Kai Meikle Portfolio</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className='text-red-500'>Hello</div>
+      <Header />
+      <section id='hero' className='snap-center'>
+        <Hero />
+      </section>
     </div>
   );
 };
