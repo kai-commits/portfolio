@@ -22,11 +22,12 @@ export const Hero = () => {
       >
         <div className='relative'>
           <Image
-            src='/hero_profile.jpeg'
+            src='/hero_profile.jpg'
             alt=''
             width={128}
             height={128}
             className='rounded-full mx-auto object-cover'
+            quality={100}
           />
         </div>
         <div>

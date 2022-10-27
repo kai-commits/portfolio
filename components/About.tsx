@@ -20,16 +20,17 @@ export const About = () => {
         className='relative rounded-full object-cover flex-shrink-0 w-56 h-56 -mb-20 md:mb-0 md:w-64 md:h-95 xl:w-[350px] xl:h-[450px]'
       >
         <Image
-          src='/hero_profile.jpeg'
+          src='/about_profile.jpg'
           alt=''
           layout='fill'
           className='rounded-full md:rounded-lg object-cover flex-shrink-0'
+          quality={100}
         />
       </motion.div>
       <div className='space-y-10 px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>
           A Little Bit{' '}
-          <span className='underline decoration-sunset/50'>About</span> Me
+          <span className='underline underline-offset-8 decoration-sunset/50'>About</span> Me
         </h4>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
