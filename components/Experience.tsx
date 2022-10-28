@@ -32,7 +32,7 @@ export const Experience = () => {
       />
       <div
         id='slider'
-        className='w-full flex space-x-10 overflow-x-scroll p-10 snap-x snap-mandatory h-[700px] scroll-smooth'
+        className='w-full flex space-x-10 overflow-x-scroll p-10 snap-x snap-mandatory h-[700px] scroll-smooth scrollbar-hide'
       >
         <ExperienceCard />
         <ExperienceCard />
