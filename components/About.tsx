@@ -30,7 +30,7 @@ export const About = () => {
       <div className='space-y-10 px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>
           A Little Bit{' '}
-          <span className='underline underline-offset-8 decoration-sunset/50'>About</span> Me
+          <span className='underline underline-offset-4 decoration-sunset/50'>About</span> Me
         </h4>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam

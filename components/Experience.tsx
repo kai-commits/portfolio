@@ -42,9 +42,7 @@ export const Experience = () => {
         className='opacity-50 hover:opacity-100 cursor-pointer hidden md:block'
         size={40}
         onClick={slideRight}
-      >
-        Right
-      </MdChevronRight>
+      />
     </motion.div>
   );
 };
