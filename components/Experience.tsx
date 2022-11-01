@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { ExperienceCard } from './ExperienceCard';
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 export const Experience = () => {
   const slideLeft = () => {
@@ -25,8 +25,8 @@ export const Experience = () => {
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
         Experience
       </h3>
-      <MdChevronLeft
-        className='opacity-50 hover:opacity-100 cursor-pointer hidden md:block'
+      <HiChevronLeft
+        className='opacity-50 hover:opacity-100 hover:text-sunset cursor-pointer hidden md:block'
         size={40}
         onClick={slideLeft}
       />
@@ -38,8 +38,8 @@ export const Experience = () => {
         <ExperienceCard />
         <ExperienceCard />
       </div>
-      <MdChevronRight
-        className='opacity-50 hover:opacity-100 cursor-pointer hidden md:block'
+      <HiChevronRight
+        className='opacity-50 hover:opacity-100 hover:text-sunset cursor-pointer hidden md:block'
         size={40}
         onClick={slideRight}
       />

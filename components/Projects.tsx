@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 type Props = {};
 
@@ -30,8 +30,8 @@ export const Projects = (props: Props) => {
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl flex'>
         Projects
       </h3>
-      <MdChevronLeft
-        className='opacity-50 hover:opacity-100 cursor-pointer hidden md:block z-20 absolute left-10'
+      <HiChevronLeft
+        className='opacity-50 hover:opacity-100 hover:text-sunset cursor-pointer hidden md:block z-20 absolute left-10'
         size={40}
         onClick={slideLeft}
       />
@@ -66,8 +66,8 @@ export const Projects = (props: Props) => {
           </div>
         ))}
       </div>
-      <MdChevronRight
-        className='opacity-50 hover:opacity-100 cursor-pointer hidden md:block z-20 absolute right-10'
+      <HiChevronRight
+        className='opacity-50 hover:opacity-100 hover:text-sunset cursor-pointer hidden md:block z-20 absolute right-10'
         size={40}
         onClick={slideRight}
       />
