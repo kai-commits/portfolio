@@ -10,7 +10,8 @@ import Head from 'next/head';
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-charcoal text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0'>
+    <div className='bg-charcoal text-white h-screen snap-y snap-mandatory overflow-y-scroll 
+    overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-sunset/80'>
       <Head>
         <title>Kai Meikle Portfolio</title>
         <link rel='icon' href='/favicon.ico' />
