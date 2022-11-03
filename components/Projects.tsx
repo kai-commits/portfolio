@@ -1,12 +1,63 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
-type Props = {};
+const projects = [
+  {
+    title: 'Crynance',
+    desc: `Crynance is a mobile orientated web application designed to help keep track of your crypto-currency finances. 
+    Log in with Google authentication and input the coins you have purchased, and Crynance will record, store, and compare 
+    your investments at time of purchase to current market values in order to visualize your portfolio gains and losses.`,
+    img: '',
+    link: 'https://crynance.vercel.app/',
+    stack: [
+      'typescript-icon-round.svg',
+      'react.svg',
+      'nextjs-icon.svg',
+      'firebase.svg',
+      'tailwindcss-icon.svg',
+    ],
+  },
+  {
+    title: 'Netflicks',
+    desc: `This project is a front-end clone of Netflix built for the purpose of learning TailwindCSS and Firebase with React. 
+    Users can create a new account, scroll through the list of movies and save their favourite shows.`,
+    img: '',
+    link: 'https://netflicks-bd2ba.web.app/',
+    stack: [
+      'javascript.svg',
+      'react.svg',
+      'firebase.svg',
+      'tailwindcss-icon.svg',
+    ],
+  },
+  {
+    title: 'Herbiview',
+    desc: `Utilizing the Plant.ID image recognition API, this app can identify plants based on an image provided by the user. 
+    After cross-referencing your image with our database, Herbiview will return information on the species, toxicities, 
+    and possible diseases the plant may have. A user may also log in and save their previous identifications for future reference.`,
+    img: '',
+    link: 'https://herbiview.herokuapp.com/',
+    stack: ['javascript.svg', 'react.svg', 'nodejs-icon.svg', 'postgresql.svg'],
+  },
+  {
+    title: 'Kool-Kids Snax',
+    desc: `A food ordering application where customers can order dishes and receive notifications via SMS. The restaurant will 
+    be notified when an order has been placed, and the customer will receive updates when the restaurant changes their order status. 
+    The customer can also view their order history, and the restaurant can also add new items to the menu.`,
+    img: '',
+    link: 'http://kool-kids-snax.herokuapp.com/',
+    stack: [
+      'javascript.svg',
+      'nodejs-icon.svg',
+      'twilio-icon.svg',
+      'postgresql.svg',
+    ],
+  },
+];
 
-export const Projects = (props: Props) => {
-  const projects = [1, 2, 3, 4, 5];
-
+export const Projects = () => {
   const slideLeft = () => {
     const slider = document.getElementById('project-slider');
     if (slider) {
@@ -52,16 +103,27 @@ export const Projects = (props: Props) => {
             >
               <Image src='/favicon.ico' alt='' width={200} height={200} />
             </motion.div>
-            <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-              <h4 className='text-4xl font-semibold text-center underline underline-offset-8 decoration-sunset/50'>
-                Crynance {project}
+            <div className='flex justify-center flex-col space-y-10 px-0 md:px-10 max-w-6xl'>
+              <h4 className='text-4xl font-semibold text-center underline underline-offset-8 decoration-sunset/30'>
+                <a
+                  href={project.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='cursor-pointer hover:text-sunset'
+                >
+                  {project.title}
+                </a>
               </h4>
-              <p className='text-lg text-center md:text-left'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                iusto ratione exercitationem repudiandae? Sed ullam, repellat
-                earum reiciendis eos, nostrum animi nemo nam iste doloremque qui
-                eveniet illo impedit libero?
-              </p>
+              <div className='flex justify-center space-x-2'>
+                {project.stack.map((tech, index) => {
+                  return (
+                    <div key={index}>
+                      <Image src={`/${tech}`} alt='' width={40} height={40} />
+                    </div>
+                  );
+                })}
+              </div>
+              <p className='text-lg text-center md:text-left'>{project.desc}</p>
             </div>
           </div>
         ))}

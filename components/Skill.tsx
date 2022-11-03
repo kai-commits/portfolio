@@ -9,7 +9,7 @@ type Props = {
 
 export const Skill = ({ src, name, directionLeft }: Props) => {
   return (
-    <div className='group relative flex cursor-pointer'>
+    <div className='group relative flex cursor-default'>
       <motion.div
         initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
         transition={{ duration: 1 }}
