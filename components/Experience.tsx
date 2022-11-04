@@ -42,10 +42,10 @@ export const Experience = () => {
       />
       <div
         id='slider'
-        className='w-full flex space-x-10 overflow-x-scroll p-10 snap-x snap-mandatory h-[700px] scroll-smooth scrollbar-hide'
+        className='w-full flex space-x-10 overflow-x-scroll p-10 snap-x snap-mandatory scroll-smooth scrollbar-hide'
       >
         <ExperienceCard
-          src='lighthouselabs_logo.jpeg'
+          src='lighthouselabs.svg'
           h1='Lighthouse Labs'
           h2='Full-Stack Web Development Bootcamp'
           startDate='Mar 2022'
