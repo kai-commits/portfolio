@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+import { SocialIcon } from 'react-social-icons';
 
 const projects = [
   {
@@ -9,8 +10,9 @@ const projects = [
     desc: `Crynance is a mobile orientated web application designed to help keep track of your crypto-currency finances. 
     Log in with Google authentication and input the coins you have purchased, and Crynance will record, store, and compare 
     your investments at time of purchase to current market values in order to visualize your portfolio gains and losses.`,
-    img: '',
+    img: 'crynance.png',
     link: 'https://crynance.vercel.app/',
+    repo: 'crynance',
     stack: [
       'typescript-icon-round.svg',
       'react.svg',
@@ -23,8 +25,9 @@ const projects = [
     title: 'Netflicks',
     desc: `This project is a front-end clone of Netflix built for the purpose of learning TailwindCSS and Firebase with React. 
     Users can create a new account, scroll through the list of movies and save their favourite shows.`,
-    img: '',
+    img: 'netflicks.png',
     link: 'https://netflicks-bd2ba.web.app/',
+    repo: 'netflicks',
     stack: [
       'javascript.svg',
       'react.svg',
@@ -37,8 +40,9 @@ const projects = [
     desc: `Utilizing the Plant.ID image recognition API, this app can identify plants based on an image provided by the user. 
     After cross-referencing your image with our database, Herbiview will return information on the species, toxicities, 
     and possible diseases the plant may have. A user may also log in and save their previous identifications for future reference.`,
-    img: '',
+    img: 'herbiview.png',
     link: 'https://herbiview.herokuapp.com/',
+    repo: 'herbiview',
     stack: ['javascript.svg', 'react.svg', 'nodejs-icon.svg', 'postgresql.svg'],
   },
   {
@@ -46,8 +50,9 @@ const projects = [
     desc: `A food ordering application where customers can order dishes and receive notifications via SMS. The restaurant will 
     be notified when an order has been placed, and the customer will receive updates when the restaurant changes their order status. 
     The customer can also view their order history, and the restaurant can also add new items to the menu.`,
-    img: '',
-    link: 'http://kool-kids-snax.herokuapp.com/',
+    img: 'koolkidssnax.png',
+    link: 'http://kool-kids-snax.herokuapp.com/users/1',
+    repo: 'kool-kids-snax',
     stack: [
       'javascript.svg',
       'nodejs-icon.svg',
@@ -101,7 +106,7 @@ export const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <Image src='/favicon.ico' alt='' width={200} height={200} />
+              <Image src={`/${project.img}`} alt='' width={300} height={200} />
             </motion.div>
             <div className='flex justify-center flex-col space-y-10 px-0 md:px-10 max-w-6xl'>
               <h4 className='text-4xl font-semibold text-center underline underline-offset-8 decoration-sunset/30'>
@@ -125,6 +130,13 @@ export const Projects = () => {
               </div>
               <p className='text-lg text-center md:text-left'>{project.desc}</p>
             </div>
+            <SocialIcon
+              url={`https://github.com/kai-commits/${project.repo}`}
+              fgColor='gray'
+              bgColor='transparent'
+              target='_blank'
+              rel='noopener noreferrer'
+            />
           </div>
         ))}
       </div>
