@@ -3,8 +3,16 @@ import { ExperienceCard } from './ExperienceCard';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 const summaryPoints = {
-  lhl: ['1', '2', '3'],
-  aws: ['1', '2', '3'],
+  lhl: [
+    `Gained firsthand experience with Javascript and Node ecosystems.`,
+    `Learned software architecture by studying programming practices and well-encapsulated code.`,
+    `Built single page applications using components, one way data flow and the Virtual DOM.`,
+  ],
+  aws: [
+    `Designed architecture strategies for application deployments.`,
+    'Analyzed software architecture for weaknesses.',
+    'Applied established development methodologies to architecture design.',
+  ],
   jb: [
     'Specialized in foundations, framing, and finish carpentry.',
     'Followed protocols and stayed organized to provide personal and teammate safety.',

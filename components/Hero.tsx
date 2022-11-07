@@ -5,8 +5,8 @@ import { BackgroundCircles } from './BackgroundCircles';
 import { motion } from 'framer-motion';
 
 export const Hero = () => {
-  const [text, count] = useTypewriter({
-    words: ['text1', 'text2', 'text3'],
+  const [text] = useTypewriter({
+    words: [`Hello! I'm Kai Meikle`, `Self-proclaimed Tech Guru`, `Designated Router Restarter`],
     loop: true,
     delaySpeed: 2000,
   });

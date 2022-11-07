@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { SocialIcon } from 'react-social-icons';
 
@@ -128,15 +127,17 @@ export const Projects = () => {
                   );
                 })}
               </div>
-              <p className='text-lg text-center md:text-left'>{project.desc}</p>
+              <p className='text-sm text-center md:text-left md:text-base lg:text-lg'>{project.desc}</p>
             </div>
-            <SocialIcon
-              url={`https://github.com/kai-commits/${project.repo}`}
-              fgColor='gray'
-              bgColor='transparent'
-              target='_blank'
-              rel='noopener noreferrer'
-            />
+            <div>
+              <SocialIcon
+                url={`https://github.com/kai-commits/${project.repo}`}
+                fgColor='gray'
+                bgColor='transparent'
+                target='_blank'
+                rel='noopener noreferrer'
+              />
+            </div>
           </div>
         ))}
       </div>

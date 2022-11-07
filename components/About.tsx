@@ -32,11 +32,12 @@ export const About = () => {
           A Little Bit{' '}
           <span className='underline underline-offset-4 decoration-sunset/50'>About</span> Me
         </h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-          cupiditate doloribus perspiciatis qui aliquid earum quis unde. Sed,
-          qui non alias sequi vel obcaecati omnis perferendis. Necessitatibus
-          unde iure dignissimos!
+        <p className='text-justify'>
+          Welcome to my portfolio!<br /><br />
+          My name is Kai Meikle, I am a Full-Stack Web Developer and Certified AWS Solutions Architect.
+          I love combining the worlds of logic and creative design to make eye-catching, accessible, and user-friendly websites and applications.
+          When I&apos;m not glued to my screen, you can find me hiking, carving the slopes, or channelling my inner Elton John.
+          I have a passion for interactive design and development and I&apos;m looking for a full-time position as a remote front-end or full-stack developer.
         </p>
       </div>
     </motion.div>
