@@ -8,7 +8,7 @@ export const Skills = () => {
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
         Skills
       </h3>
-      <div className='grid grid-cols-4 gap-5'>
+      <div className='grid grid-cols-4 gap-5 gap-y-14 md:gap-y-5'>
         <Skill src='nextjs-icon.svg' name='Next.js' directionLeft />
         <Skill src='typescript-icon-round.svg' name='TypeScript' directionLeft />
         <Skill src='react.svg' name='React' directionLeft />

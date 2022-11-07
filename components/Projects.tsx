@@ -82,7 +82,7 @@ export const Projects = () => {
       transition={{ duration: 1.5 }}
       className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'
     >
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl flex'>
+      <h3 className='hidden sm:block absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
         Projects
       </h3>
       <HiChevronLeft
@@ -97,10 +97,10 @@ export const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className='w-screen flex-shrink-0 snap-center snap-mandatory flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'
+            className='w-screen flex-shrink-0 snap-center snap-mandatory flex flex-col space-y-5 items-center justify-center p-5 sm:p-20 md:p-44 h-screen'
           >
             <motion.div
-              initial={{ y: -200, opacity: 0 }}
+              initial={{ y: -100, opacity: 0 }}
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
