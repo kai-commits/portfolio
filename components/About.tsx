@@ -9,7 +9,7 @@ export const About = () => {
       transition={{ duration: 1.5 }}
       className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
     >
-      <h3 className='hidden sm:block absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
         About
       </h3>
       <motion.div
@@ -17,7 +17,7 @@ export const About = () => {
         transition={{ duration: 1.2 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
-        className='relative rounded-full object-cover flex-shrink-0 w-56 h-56 -mb-20 md:mb-0 md:w-64 md:h-95 xl:w-[350px] xl:h-[450px]'
+        className='relative rounded-full object-cover flex-shrink-0 w-56 h-56 -mb-32 md:mb-0 md:w-64 md:h-95 xl:w-[350px] xl:h-[450px]'
       >
         <Image
           src='/about_profile.jpg'
@@ -32,7 +32,7 @@ export const About = () => {
           A Little Bit{' '}
           <span className='underline underline-offset-4 decoration-sunset/50'>About</span> Me
         </h4>
-        <p className='text-justify'>
+        <p className='text-justify text-sm sm:text-base lg:text-lg'>
           Welcome to my portfolio!<br /><br />
           My name is Kai Meikle, I am a Full-Stack Web Developer and Certified AWS Solutions Architect.
           I love combining the worlds of logic and creative design to make eye-catching, accessible, and user-friendly websites and applications.

@@ -29,7 +29,7 @@ export const ExperienceCard = ({
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
       >
-        <div className='relative w-10 h-10 object-cover object-center'>
+        <div className='relative w-20 h-20 object-cover object-center'>
           <Image src={`/${src}`} alt='' layout='fill' className='' />
         </div>
       </motion.div>
