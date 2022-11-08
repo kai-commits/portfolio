@@ -20,11 +20,11 @@ export const ExperienceCard = ({
 }: Props) => {
   return (
     <article
-      className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[350px] md:w-[500px] snap-center bg-[#292929] p-10 
+      className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[350px] md:w-[500px] snap-center bg-[#292929] px-8 py-4 sm:p-10
     hover:opacity-100 opacity-60 cursor-default transition-opacity duration-200 overflow-hidden'
     >
       <motion.div
-        initial={{ y: -100, opacity: 0 }}
+        initial={{ y: -50, opacity: 0 }}
         transition={{ duration: 1.2 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
