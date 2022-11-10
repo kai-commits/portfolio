@@ -43,7 +43,7 @@ export const Contact = () => {
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className='hidden sm:flex flex-col space-y-2 w-fit'
+          className='hidden sm:flex flex-col space-y-2 w-fit mx-auto'
         >
           <div className='flex space-x-2'>
             <input
