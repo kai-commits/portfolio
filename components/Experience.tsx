@@ -18,6 +18,11 @@ const summaryPoints = {
     'Followed protocols and stayed organized to provide personal and teammate safety.',
     'Completed tasks according to technical document requirements and specifications to work with accuracy.',
   ],
+  lg: [
+    'Designed responsive UI in React that fulflled design specifcations from Figma.',
+    'Worked with lead developer to build project data structure and CRUD functionality.',
+    'Implemented Next.js authorization and user registration with SSO using Twitch and Discord.',
+  ],
 };
 
 export const Experience = () => {
@@ -38,20 +43,28 @@ export const Experience = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='h-screen flex relative overflow-hidden text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center'
+      className='relative flex items-center h-screen max-w-full px-10 mx-auto overflow-hidden text-left md:flex-row justify-evenly'
     >
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
         Experience
       </h3>
       <HiChevronLeft
-        className='opacity-50 hover:opacity-100 hover:text-sunset cursor-pointer hidden md:block'
+        className='hidden opacity-50 cursor-pointer hover:opacity-100 hover:text-sunset md:block'
         size={40}
         onClick={slideLeft}
       />
       <div
         id='slider'
-        className='w-full flex space-x-10 overflow-x-scroll p-10 snap-x snap-mandatory scroll-smooth scrollbar-hide'
+        className='flex w-full p-10 space-x-10 overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-hide'
       >
+        <ExperienceCard
+          src='lore-genie-logo.svg'
+          h1='Lore Genie'
+          h2='Freelance'
+          startDate='Dec 2022'
+          endDate='Current'
+          summaryPoints={summaryPoints.lg}
+        />
         <ExperienceCard
           src='lighthouselabs.svg'
           h1='Lighthouse Labs'
@@ -78,7 +91,7 @@ export const Experience = () => {
         />
       </div>
       <HiChevronRight
-        className='opacity-50 hover:opacity-100 hover:text-sunset cursor-pointer hidden md:block'
+        className='hidden opacity-50 cursor-pointer hover:opacity-100 hover:text-sunset md:block'
         size={40}
         onClick={slideRight}
       />
