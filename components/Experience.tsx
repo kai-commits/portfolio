@@ -62,7 +62,7 @@ export const Experience = () => {
           h1='Lore Genie'
           h2='Freelance'
           startDate='Dec 2022'
-          endDate='Current'
+          endDate='Apr 2023'
           summaryPoints={summaryPoints.lg}
         />
         <ExperienceCard

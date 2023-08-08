@@ -9,12 +9,12 @@ import type { NextPage } from 'next';
 import { HiChevronUp } from 'react-icons/hi';
 import Head from 'next/head';
 import Link from 'next/link';
+import { LoreGenie } from '@/components/LoreGenie';
 
 const Home: NextPage = () => {
   return (
     <div
-      className='bg-charcoal text-white h-screen snap-y snap-mandatory overflow-y-scroll 
-    overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-sunset/80'
+      className='z-0 h-screen overflow-x-hidden overflow-y-scroll text-white bg-charcoal snap-y snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-sunset/80'
     >
       <Head>
         <title>Kai Meikle Portfolio</title>
@@ -30,6 +30,9 @@ const Home: NextPage = () => {
       <section id='experience' className='snap-center'>
         <Experience />
       </section>
+      <section id='lore genie' className='snap-center'>
+        <LoreGenie />
+      </section>
       <section id='skills' className='snap-start'>
         <Skills />
       </section>
@@ -40,8 +43,8 @@ const Home: NextPage = () => {
         <Contact />
       </section>
       <Link href='#hero'>
-        <footer className='flex sticky bottom-5 w-full justify-center items-center scroll-smooth'>
-            <HiChevronUp size={40} className='opacity-50 hover:opacity-100 hover:text-sunset cursor-pointer'/>
+        <footer className='sticky flex items-center justify-center w-full bottom-5 scroll-smooth'>
+            <HiChevronUp size={40} className='opacity-50 cursor-pointer hover:opacity-100 hover:text-sunset'/>
         </footer>
       </Link>
     </div>
